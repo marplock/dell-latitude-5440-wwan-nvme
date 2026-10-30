@@ -1,0 +1,4 @@
+# For systemd-boot users:
+# Append the following parameters to the 'options' line of your entry in /boot/loader/entries/*.conf:
+#
+# pci=realloc nvme.noacpi=1 intel_iommu=off nvme_core.admin_timeout=120 nvme.quirks=15b7:5004:delay_before_chk_rdy,no_apst,broken_msi,single_vector
